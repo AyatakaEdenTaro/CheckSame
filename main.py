@@ -1,3 +1,8 @@
+def saikyo():
+    val = input()
+    result = val.isdecimal() and all(val[0] == v for v in val) and val[0] != "0"
+    print("ゾロ目で" + ("す" if result else "はありません"))
+
 def isint(s):  # 整数値を表しているかどうかを判定
     try:
         int(s, 10)  # 文字列を実際にint関数で変換してみる
